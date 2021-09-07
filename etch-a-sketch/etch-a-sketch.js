@@ -24,7 +24,7 @@ ctx.lineTo(x, y);
 ctx.stroke();
 
 function draw({ key }) {
-  hue += 10;
+  hue += MOVE_AMOUNT;
   ctx.strokeStyle = `hsl(${Math.random() * 360}, 100%, 50%)`;
   ctx.beginPath();
   ctx.moveTo(x, y);
